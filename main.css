@@ -3248,37 +3248,7 @@ html.lenis body {
 /*----------------------------------------*/
 /*  2.23 settings
 /*----------------------------------------*/
-.rs-theme-settings-area {
-  position: fixed;
-  top: 50%;
-  right: 0px;
-  width: 240px;
-  background-color: var(--rs-white);
-  transform: translateY(-50%) translateX(100%);
-  z-index: 991;
-  border-bottom-right-radius: 4px;
-  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.1);
-  transition: all 0.4s 0s ease-out;
-}
-.rs-theme-settings-area.settings-opened {
-  transform: translateY(-50%) translateX(0%);
-}
-.rs-theme-settings-area.settings-opened .rs-theme-settings-gear {
-  opacity: 0;
-}
-.rs-theme-settings-area.settings-opened .rs-theme-settings-close {
-  opacity: 1;
-}
-.rs-theme-settings-open {
-  position: absolute;
-  top: -1px;
-  right: 100%;
-}
-.rs-theme-settings-gear {
-  display: inline-block;
-  color: var(--rs-black);
-  animation: spin 8s linear infinite;
-}
+
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
