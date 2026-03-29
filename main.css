@@ -3274,22 +3274,6 @@ html.lenis body {
   top: -1px;
   right: 100%;
 }
-.rs-theme-settings-open button {
-  background-color: var(--rs-white);
-  border-inline-end: 0;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  font-size: 20px;
-  color: var(--rs-black);
-  position: relative;
-  border-start-start-radius: 2px;
-  border-bottom-left-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15);
-}
 .rs-theme-settings-gear {
   display: inline-block;
   color: var(--rs-black);
