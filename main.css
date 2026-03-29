@@ -199,7 +199,7 @@ h6 {
   --rs-yellow: #F69C00;
   --rs-pink: #E033E0;
   --rs-red: #E80000;
-  --rs-theme-primary: #0067ff;
+  --rs-theme-primary: #AB052D;
   --rs-theme-secondary: #2B3944;
   --rs-text-primary: #616C74;
   --rs-text-secondary: #BEBEBE;
@@ -3248,7 +3248,53 @@ html.lenis body {
 /*----------------------------------------*/
 /*  2.23 settings
 /*----------------------------------------*/
-
+.rs-theme-settings-area {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  width: 240px;
+  background-color: var(--rs-white);
+  transform: translateY(-50%) translateX(100%);
+  z-index: 991;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s 0s ease-out;
+}
+.rs-theme-settings-area.settings-opened {
+  transform: translateY(-50%) translateX(0%);
+}
+.rs-theme-settings-area.settings-opened .rs-theme-settings-gear {
+  opacity: 0;
+}
+.rs-theme-settings-area.settings-opened .rs-theme-settings-close {
+  opacity: 1;
+}
+.rs-theme-settings-open {
+  position: absolute;
+  top: -1px;
+  right: 100%;
+}
+.rs-theme-settings-open button {
+  background-color: var(--rs-white);
+  border-inline-end: 0;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--rs-black);
+  position: relative;
+  border-start-start-radius: 2px;
+  border-bottom-left-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15);
+}
+.rs-theme-settings-gear {
+  display: inline-block;
+  color: var(--rs-black);
+  animation: spin 8s linear infinite;
+}
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -12619,7 +12665,7 @@ html.lenis body {
 .rs-map-one .rs-google-map iframe {
   width: 100%;
   height: 575px;
-  filter: none;
+  filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
 @media only screen and (max-width: 1600px) {
   .rs-map-one .rs-google-map iframe {
@@ -16354,7 +16400,7 @@ html.lenis body {
   transition: all 0.3s ease-in-out;
 }
 .rs-brand-two .rs-brand-item .rs-brand-thumb img {
-  filter: none;
+  filter: brightness(0) invert(1);
   width: 180px;
 }
 @media only screen and (max-width: 1366px) {
